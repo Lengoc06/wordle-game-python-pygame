@@ -35,7 +35,7 @@ Follow these steps in your Terminal or Command Prompt:
 
 If you have cloned the repository, skip this step. If you received the code as a ZIP file, navigate to the extracted directory.
 
-    ```bash
+    ```sh
     # Optional: If downloading from GitHub
     git clone https://github.com/Lengoc06/wordle-game-python-pygame.git
     cd wordle-game-python-pygame
@@ -45,7 +45,7 @@ If you have cloned the repository, skip this step. If you received the code as a
 
 Install all necessary libraries using the requirements.txt file:
 
-    ```bash
+    ```sh
     pip install -r requirements.txt
     ```
 
@@ -53,7 +53,7 @@ Install all necessary libraries using the requirements.txt file:
 
 Start the game using the main Python file:
 
-    ```bash
+    ```sh
     python main.py
     ```
 
