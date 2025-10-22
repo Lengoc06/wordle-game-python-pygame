@@ -1,6 +1,7 @@
 # 🎮 Wordle Game - Individual Project (Pygame)
 
 A minimalist version of the classic Wordle puzzle game developed using Python and the Pygame library.
+<>
 
 ---
 
@@ -35,27 +36,27 @@ Follow these steps in your Terminal or Command Prompt:
 
 If you have cloned the repository, skip this step. If you received the code as a ZIP file, navigate to the extracted directory.
 
-    ```sh
-    # Optional: If downloading from GitHub
-    git clone https://github.com/Lengoc06/wordle-game-python-pygame.git
-    cd wordle-game-python-pygame
-    ```
+```Bash
+# Optional: If downloading from GitHub
+git clone https://github.com/Lengoc06/wordle-game-python-pygame.git
+cd wordle-game-python-pygame
+```
 
 ### 2. Install Dependencies
 
 Install all necessary libraries using the requirements.txt file:
 
-    ```sh
-    pip install -r requirements.txt
-    ```
+```Bash
+pip install -r requirements.txt
+```
 
 ### 3. Run the Game
 
 Start the game using the main Python file:
 
-    ```sh
-    python main.py
-    ```
+```Bash
+python main.py
+```
 
 ---
 
@@ -84,11 +85,12 @@ The project is organized as follows:
 ```
 [MSSV].zip
 ├── Source/
+│ ├── assets/
+│ │ ├── answers.txt
+│ │ └── allowed.txt
 │ ├── main.py
 │ ├── settings.py
 │ ├── sprites.py
-│ ├── answers.txt
-│ ├── allowed.txt
 │ ├── README.md
 │ └── requirements.txt
 └── Report.pdf
