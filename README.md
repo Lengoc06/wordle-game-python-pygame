@@ -54,7 +54,7 @@ pip install -r requirements.txt
 Start the game using the main Python file:
 
 ```Bash
-python src/main.py
+python main.py
 ```
 
 ---
@@ -98,6 +98,7 @@ The project is organized as follows:
 ---
 
 ## 🙏 Acknowledgements
+
 The foundational logic and Pygame structure for this project were implemented based on the concepts and guidance provided by the following tutorial series:
 
 Primary Reference: [YouTube Playlist URL: https://www.youtube.com/playlist?list=PLOcNsDskpOqpeGonGty268I_asI2PncZm]
