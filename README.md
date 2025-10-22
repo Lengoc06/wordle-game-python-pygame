@@ -1,7 +1,6 @@
 # 🎮 Wordle Game - Individual Project (Pygame)
 
 A minimalist version of the classic Wordle puzzle game developed using Python and the Pygame library.
-<>
 
 ---
 
