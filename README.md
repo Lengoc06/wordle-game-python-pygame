@@ -35,24 +35,27 @@ Follow these steps in your Terminal or Command Prompt:
 
 If you have cloned the repository, skip this step. If you received the code as a ZIP file, navigate to the extracted directory.
 
-    '''bash
+    ```Bash
     # Optional: If downloading from GitHub
     git clone https://github.com/Lengoc06/wordle-game-python-pygame.git
     cd wordle-game-python-pygame
+    ```
 
 ### 2. Install Dependencies
 
 Install all necessary libraries using the requirements.txt file:
 
-    '''bash
+    ```Bash
     pip install -r requirements.txt
+    ```
 
 ### 3. Run the Game
 
 Start the game using the main Python file:
 
-    '''bash
+    ```Bash
     python main.py
+    ```
 
 ---
 
@@ -78,6 +81,7 @@ You have 6 attempts to guess the word.
 
 The project is organized as follows:
 
+```
 [MSSV].zip
 ├── Source/
 │ ├── main.py
@@ -88,6 +92,7 @@ The project is organized as follows:
 │ ├── README.md
 │ └── requirements.txt
 └── Report.pdf
+```
 
 ---
 
