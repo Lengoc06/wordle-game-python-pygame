@@ -77,26 +77,6 @@ You have 6 attempts to guess the word.
 
 ---
 
-## 📂 Project Structure
-
-The project is organized as follows:
-
-```
-[MSSV].zip
-├── Source/
-│ ├── assets/
-│ │ ├── answers.txt
-│ │ └── allowed.txt
-│ ├── main.py
-│ ├── settings.py
-│ ├── sprites.py
-│ ├── README.md
-│ └── requirements.txt
-└── Report.pdf
-```
-
----
-
 ## 🙏 Acknowledgements
 
 The foundational logic and Pygame structure for this project were implemented based on the concepts and guidance provided by the following tutorial series:
