@@ -1,3 +1,4 @@
+import os
 import random
 import pygame
 from settings import *
@@ -14,9 +15,12 @@ class Game:
         self.not_found_word_message = UIElement(100, 60, "Word Not Found", WHITE)
 
     def create_word_list(self):
-        with open("answers.txt", "r") as file:
+        curr_dir = os.path.dirname(__file__)
+        answer_path = os.path.join(curr_dir, "assets", "answers.txt")
+        allowed_path = os.path.join(curr_dir, "assets", "allowed.txt")
+        with open(answer_path, "r") as file:
             answer = file.read().splitlines()
-        with open("allowed.txt", "r") as file:
+        with open(allowed_path, "r") as file:
             allowed = file.read().splitlines()
         
         self.ans_list = answer
