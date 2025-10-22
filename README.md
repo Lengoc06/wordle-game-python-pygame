@@ -39,20 +39,20 @@ If you have cloned the repository, skip this step. If you received the code as a
     # Optional: If downloading from GitHub
     git clone https://github.com/Lengoc06/wordle-game-python-pygame.git
     cd wordle-game-python-pygame
-    '''
 
 ### 2. Install Dependencies
+
 Install all necessary libraries using the requirements.txt file:
 
     '''bash
     pip install -r requirements.txt
-    3. Run the Game
-    Start the game using the main Python file:
-    '''
+
+### 3. Run the Game
+
+Start the game using the main Python file:
 
     '''bash
     python main.py
-    '''
 
 ---
 
@@ -78,12 +78,16 @@ You have 6 attempts to guess the word.
 
 The project is organized as follows:
 
-.
-├── main.py        # Main game loop and Pygame initialization
-├── game_logic.py  # Handles core game logic (word checking, state updates)
-├── ui_elements.py # Handles drawing UI components (grid, keyboard, text)
-├── words.txt      # List of valid 5-letter words
-└── requirements.txt # List of project dependencies
+[MSSV].zip
+├── Source/
+│ ├── main.py
+│ ├── settings.py
+│ ├── sprites.py
+│ ├── answers.txt
+│ ├── allowed.txt
+│ ├── README.md
+│ └── requirements.txt
+└── Report.pdf
 
 ---
 
