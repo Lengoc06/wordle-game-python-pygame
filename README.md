@@ -54,7 +54,7 @@ pip install -r requirements.txt
 Start the game using the main Python file:
 
 ```Bash
-python main.py
+python src/main.py
 ```
 
 ---
