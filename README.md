@@ -97,4 +97,6 @@ The foundational logic and Pygame structure for this project were implemented ba
 
 Primary Reference: [YouTube Playlist URL: https://www.youtube.com/playlist?list=PLOcNsDskpOqpeGonGty268I_asI2PncZm]
 
+Word File: https://gist.github.com/cfreshman/dec102adb5e60a8299857cbf78f6cf57
+
 This implementation is an individual adaptation and application of the learned techniques.
