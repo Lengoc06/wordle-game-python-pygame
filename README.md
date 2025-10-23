@@ -31,14 +31,28 @@ To run this game, ensure you have the following installed on your system:
 
 Follow these steps in your Terminal or Command Prompt:
 
-### 1. Download the Source Code
+### 1. Download the Source Code & Asset Folder
 
 If you have cloned the repository, skip this step. If you received the code as a ZIP file, navigate to the extracted directory.
 
 ```Bash
-# Optional: If downloading from GitHub
+# Optional: If downloading from GitHub (include Asset Folder)
 git clone https://github.com/Lengoc06/wordle-game-python-pygame.git
 cd wordle-game-python-pygame
+```
+
+Download Asset folder at: https://drive.google.com/file/d/151OH7widxFBOWSOdNdVv0jKsE-uUcKTb/view?usp=drive_link
+Extract to the same folder as ```main.py```
+```Bash
+# Folder Structure
+.
+├── asset
+│ │ ├── answers.txt
+│ │ └── allowed.txt
+│ ├── main.py
+│ ├── settings.py
+│ ├── sprite.py
+│ └── ...
 ```
 
 ### 2. Install Dependencies

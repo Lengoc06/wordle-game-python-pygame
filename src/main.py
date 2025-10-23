@@ -29,6 +29,7 @@ class Game:
 
     def new(self):
         self.ans = random.choice(self.ans_list).upper()
+        # self.ans = "CLOCK"
         # print(self.ans)
         self.text = ""
         self.curr_row = 0
@@ -70,7 +71,7 @@ class Game:
                 tile.draw(self.screen)
 
     def draw(self):
-        self.screen.fill(BGCOLOUR)
+        self.screen.fill(BGCOLOR)
         if self.not_enough_letters:
             self.timer += 1
             self.not_enough_letters_message.fade_in()
@@ -101,7 +102,7 @@ class Game:
         amount_move = 4
         move = 3
         screen_copy = self.screen.copy()
-        screen_copy.fill(BGCOLOUR)
+        screen_copy.fill(BGCOLOR)
         for row in self.tiles:
             for tile in row:
                 if row != self.tiles[self.curr_row]:
@@ -140,7 +141,7 @@ class Game:
                         tile.width += size * 2
                         tile.height += size * 2
                         surface = pygame.Surface((tile.width, tile.height))
-                        surface.fill(BGCOLOUR)
+                        surface.fill(BGCOLOR)
                         self.screen.blit(surface, (tile.x, tile.y))
                         tile.draw(self.screen)
                         pygame.display.flip()
@@ -148,12 +149,12 @@ class Game:
                     self.add_letter()
                 break
 
-    def reveal_animation(self, tile, colour):
+    def reveal_animation(self, tile, color):
         screen_copy = self.screen.copy()
 
         while True:
             surface = pygame.Surface((tile.width + 5, tile.height + 5))
-            surface.fill(BGCOLOUR)
+            surface.fill(BGCOLOR)
             screen_copy.blit(surface, (tile.x, tile.y))
             self.screen.blit(screen_copy, (0, 0))
             if self.flip:
@@ -162,7 +163,7 @@ class Game:
                 tile.font_y += 4
                 tile.font_height = max(tile.font_height - 8, 0)
             else:
-                tile.colour = colour
+                tile.color = color
                 tile.y -= 6
                 tile.height += 12
                 tile.font_y -= 4
@@ -180,21 +181,21 @@ class Game:
 
     def check_letters(self):
         copy_word = list(self.ans)
-        colour = [GREY] * 5
+        color = [GREY] * 5
         for i in range(5):
             if self.text[i] == copy_word[i]:
-                colour[i] = GREEN
+                color[i] = GREEN
                 copy_word[i] = ''
 
         for i in range(5):
-            if colour[i] == GREY:
+            if color[i] == GREY:
                 if self.text[i] in copy_word:
-                    colour[i] = YELLOW
+                    color[i] = YELLOW
                     idx = copy_word.index(self.text[i])
                     copy_word[idx] = ''
             
         for i in range(5):    
-            self.reveal_animation(self.tiles[self.curr_row][i], colour[i])
+            self.reveal_animation(self.tiles[self.curr_row][i], color[i])
 
 
     def events(self):
@@ -251,7 +252,7 @@ class Game:
                     if event.key == pygame.K_RETURN:
                         return
 
-            self.screen.fill(BGCOLOUR)
+            self.screen.fill(BGCOLOR)
             self.draw_tiles()
             self.end_screen_text.fade_in()
             self.end_screen_text.draw(self.screen)

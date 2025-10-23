@@ -2,10 +2,10 @@ import pygame
 from settings import *
 
 class Tile:
-    def __init__(self, x, y, letter = '', colour = None):
+    def __init__(self, x, y, letter = '', color = None):
         self.x, self.y = x, y
         self.letter = letter
-        self.colour = colour
+        self.color = color
         self.width, self.height = TILESIZE, TILESIZE
         self.font_size = int(60 * (TILESIZE / 100))
         self.create_font()
@@ -16,10 +16,10 @@ class Tile:
         self.font_width, self.font_height = font.size(self.letter)
 
     def draw(self, screen):
-        if self.colour is None:
+        if self.color is None:
             pygame.draw.rect(screen, WHITE, (self.x, self.y, self.width, self.height), 2)
         else:
-            pygame.draw.rect(screen, self.colour, (self.x, self.y, self.width, self.height))
+            pygame.draw.rect(screen, self.color, (self.x, self.y, self.width, self.height))
 
         if self.letter != "":
             self.font_x = self.x + (self.width / 2) - (self.font_width / 2)
@@ -29,17 +29,17 @@ class Tile:
 
 
 class UIElement:
-    def __init__(self, x, y, text, colour, font_size = 30):
+    def __init__(self, x, y, text, color, font_size = 30):
         self.x, self.y = x, y
         self.text = text
-        self.colour = colour
+        self.color = color
         self.font_size = font_size
         self.alpha = 0
         self.create_font()
 
     def create_font(self):
         font = pygame.font.SysFont("Consolas", self.font_size)
-        self.original_surface = font.render(self.text, True, self.colour)
+        self.original_surface = font.render(self.text, True, self.color)
         self.text_surface = self.original_surface.copy()
         self.alpha_surface = pygame.Surface(self.text_surface.get_size(), pygame.SRCALPHA)
 
