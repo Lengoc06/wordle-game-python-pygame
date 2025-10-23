@@ -47,12 +47,12 @@ Extract to the same folder as ```main.py```
 # Folder Structure
 .
 ├── asset
-│ │ ├── answers.txt
-│ │ └── allowed.txt
-│ ├── main.py
-│ ├── settings.py
-│ ├── sprite.py
-│ └── ...
+│ ├── answers.txt
+│ └── allowed.txt
+├── main.py
+├── settings.py
+├── sprite.py
+└── ...
 ```
 
 ### 2. Install Dependencies
